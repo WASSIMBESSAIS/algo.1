@@ -1,0 +1,22 @@
+ALGORITHM algo_first
+VAR
+    num_char : INTEGER:=0;
+    num_word : INTEGER:=0;
+    num_vow : INTEGER:=0;
+    s :STRING: 'go my code.';
+    c : CHAR := "";
+BEGIN
+WHILE (c <>'.' ) DO
+    num_char := num_char+1;
+    IF (c :='a' or c := 'e' or c := 'i' or c := 'o' or c := 'u' or c := 'y' ) THEN
+        num_vow := num_vow+1
+    END_IF
+    IF (c:=' ') THEN
+        num_word := num_word+1
+    END_IF
+END_WHILE
+write(num_char+1)
+write(num_word+1)  
+write(num_vow)
+  
+END
